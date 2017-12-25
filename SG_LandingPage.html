@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>SAME GROUND</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			body {
+				padding: 0px;
+				margin: 0px;
+				font-family: 'Lato', sans-serif;
+			}
+			#upper_container {
+				position: relative;
+				float: left;
+				width : 100%;
+				height : 85%;
+				background : url('LandingPageCandidate1ForREET.png') no-repeat;  
+				background-size: cover;
+				background-position: center top;
+				border-bottom: 0.5px solid #974dbc;
+			}
+			#lower_container {
+				position: relative;
+				float: left;
+				width : 100%;
+				height : 800px;
+			}
+			#title {
+			    animation-name: fadeInUp;
+			    margin: 0;
+			    padding-top: 118px;
+			    padding-bottom: 15px;
+			    display: block;
+			    clear: both;
+			    font-size: 40px;
+			    line-height: 32px;
+			    text-align: center;
+			    font-weight: 800;
+			    color: #222;
+			}
+			#summary {
+				animation-name: fadeInUp;
+			    margin: 0;
+			    padding-bottom: 70px;
+			    display: block;
+			    clear: both;
+			    font-size: 18px;
+			    line-height: 22px;
+			    text-align: center;
+			    font-weight: 300;
+			    color: rgb(122, 122, 122);
+			}
+			#description_wrapper {
+				position: relative;
+				float: left;
+				width : 100%;
+				height : 85%;
+				background : url('LandingPageCandidate1ForREET.png') no-repeat;  
+				background-size: cover;
+				background-position: center top;
+				border-bottom: 0.5px solid #974dbc;
+			}
+			#guy_wrapper {
+
+			}
+			#girl_wrapper {
+
+			}
+			#guy_imoticon_wrapper {
+
+			}
+			#guy_description_wrapper {
+
+			}
+			#girl_imoticon_wrapper {
+
+			}
+			#girl_description_wrapper {
+				
+			}
+			#footer {
+				position: relative;
+			    float: left;
+			    width: 100%;
+			    height: 100px;
+			    background-color: rgba(122, 122, 122, 0.12);
+			    border-top: 1px solid #974dbc;
+			}
+		</style>
+		<script> 
+			window.onload = function(){
+				var upper_container = document.createElement('div');
+				var lower_container = document.createElement('div');
+				var title = document.createElement('span');
+				var summary = document.createElement('span');
+				var description_wrapper = document.createElement('div');
+				var guy_wrapper = document.createElement('div');
+				var girl_wrapper = document.createElement('div');
+				var guy_imoticon_wrapper = document.createElement('div');
+				var guy_description_wrapper = document.createElement('div');
+				var girl_imoticon_wrapper = document.createElement('div');
+				var girl_description_wrapper = document.createElement('div');
+				var footer = document.createElement('div');
+				upper_container.id = 'upper_container';
+				lower_container.id = 'lower_container';
+				title.id = 'title';
+				title.innerHTML = 'SAME GROUND';
+				summary.id = 'summary';
+				summary.innerHTML = '비슷한 배경을 가진 돌싱들의 프리미엄 만남공간';
+				description_wrapper.id = 'description_wrapper'
+				footer.id = 'footer';
+				lower_container.appendChild(title);
+				lower_container.appendChild(summary);
+				document.body.appendChild(upper_container);
+				document.body.appendChild(lower_container);
+				document.body.appendChild(footer);
+			}
+		</script>
+		</head>
+	<body>
+	</body>
+</html>

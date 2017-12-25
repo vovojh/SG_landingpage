@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>REET</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			body {
+				padding: 0px;
+				margin: 0px;
+			}
+			#background_image {
+				width : 100%;
+				height : 40%;
+				background : url('LandingPageCandidate1ForREET.png') no-repeat;  
+				background-size: cover;
+				z-index: 1;
+			}
+			#menu_bar {
+				position : relative;
+				width : 100%;
+				height : 80px;
+				background-color: transparent;
+				z-index: 2;
+			}
+			#logo {
+				position : absolute;
+				top : 20px;
+				left : 20px;
+				background: url('LogoCandidate1ForREET.png');
+				z-index: 2;
+			}
+			#ring {
+				position : absolute;
+				top : 20px;
+				right : 20px;
+				background: url('bell.png');
+				z-index: 2;
+			}
+			#lower_container {
+				width : 100%;
+				height : 60%;
+				background-color: blue;
+				z-index: 2;
+			}
+		</style>
+		<script> 
+			window.onload = function(){
+				var background_image = document.createElement('div');
+				var menu_bar = document.createElement('div');
+				var logo = document.createElement('div');
+				var ring = document.createElement('div');
+				var lower_container = document.createElement('div');
+				background_image.id = 'background_image';
+				menu_bar.id = 'menu_bar';
+				logo.id = 'logo';
+				ring.id = 'ring';
+				lower_container.id = 'lower_container';
+				menu_bar.appendChild(logo);
+				menu_bar.appendChild(ring);
+				background_image.appendChild(menu_bar);
+				document.body.appendChild(background_image);
+				document.body.appendChild(lower_container);
+			}
+		</script>
+		</head>
+	<body>
+	</body>
+</html>
