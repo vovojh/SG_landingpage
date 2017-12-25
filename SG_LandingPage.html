@@ -7,6 +7,10 @@
 				padding: 0px;
 				margin: 0px;
 				font-family: 'Lato', sans-serif;
+				min-width : ;
+			}
+			div {
+				white-space: pre;
 			}
 			#upper_container {
 				position: relative;
@@ -51,37 +55,158 @@
 			}
 			#description_wrapper {
 				position: relative;
-				float: left;
 				width : 100%;
-				height : 85%;
-				background : url('LandingPageCandidate1ForREET.png') no-repeat;  
-				background-size: cover;
-				background-position: center top;
-				border-bottom: 0.5px solid #974dbc;
+				height : 500px;
+			}
+			#description_placeholder {
+				position: relative;
+			    margin: 0 auto;
+			    width: 600px;
+			    height: 500px;
+			    /*background-color: red;*/
+			    overflow: hidden;
+			}
+			#intro {
+				position: relative;
+			    float: left;
+			    width: 600px;
+			    height: 100px;
+			    text-align: center;
+			    line-height: 100px;
+			    vertical-align: middle;
+			    text-decoration: underline;
+			    /*background-color: blue;*/
 			}
 			#guy_wrapper {
-
+				position: relative;
+			    float: left;
+			    width: 300px;
+			    height: 300px;
+			    /*background-color: blue;*/
+			    overflow: hidden;
 			}
 			#girl_wrapper {
-
+				position: relative;
+				float: left;
+				width:300px;
+				height:300px;
+				/*background-color: yellow;*/
+				overflow: hidden;
 			}
 			#guy_imoticon_wrapper {
-
+				position: relative;
+				float: left;
+				width:300px;
+				height:130px;
+				/*background-color: orange;*/
 			}
 			#guy_description_wrapper {
-
+				position: relative;
+				left : 20px;
+				float: left;
+				width:260px;
+				height:170px;
+				text-align: center;
+				font-size: 14px;
+				/*background-color: #db89ff;*/
+			}
+			#guy_imoticon {
+				position: relative;
+			    top: 15px;
+			    left: 115px;
+			    width: 70px;
+			    height: 70px;
+			    background: url('masculine.png') no-repeat;
+			    background-size: cover;
+			    background-position: center;
 			}
 			#girl_imoticon_wrapper {
-
+				position: relative;
+				float: left;
+				width:300px;
+				height:130px;
+				/*background-color: orange;*/
 			}
 			#girl_description_wrapper {
-				
+				position: relative;
+				float: left;
+				left : 20px;
+				width:260px;
+				height:170px;
+				text-align: center;
+				font-size: 14px;
+				/*background-color: #db89ff;*/		
+			}
+			#girl_imoticon {
+				position: relative;
+				top : 15px;
+				left: 115px;
+				width : 70px;
+				height : 70px;
+				background : url('femenine.png') no-repeat;  
+				background-size: cover;
+				background-position: center;
+			}
+			#download_link_wrapper {
+				position: relative;
+			    float: left;
+			    width: 600px;
+			    height: 100px;
+			    overflow: hidden;
+			}
+			#ios_download_wrapper {
+				position: relative;
+			    float: left;
+			    width: 300px;
+			    height: 100px;
+			    overflow: hidden;
+			}
+			#ios_link {
+				position: relative;
+			    top: 10px;
+			    left: 30px;
+			    width: 240px;
+			    height: 80px;
+			    border-radius: 10px;
+			    background: url('ios_link.png') no-repeat;
+			    background-size: cover;
+			    background-position: center;
+			    transition : all .1s ease-in-out;		
+			}
+			#android_download_wrapper {
+				position: relative;
+			    float: left;
+			    width: 300px;
+			    height: 100px;
+			    overflow: hidden;
+			}
+			#android_link {
+				position: relative;
+			    top: 10px;
+			    left: 30px;
+			    width: 240px;
+			    height: 80px;
+			    border-radius: 10px;
+			    background: url('android_link.png') no-repeat;
+			    background-size: cover;
+			    background-position: center;	
+			    transition : all .1s ease-in-out;		
+			}
+			#ios_link:hover, #android_link:hover {
+				transform : scale(1.05);
+			}
+			#ios_link:active, #android_link:active {
+				transform : scale(0.95);				
 			}
 			#footer {
 				position: relative;
 			    float: left;
 			    width: 100%;
 			    height: 100px;
+			    text-align: center;
+			    line-height: 100px;
+			    vertical-align: middle;
+			    /*text-decoration: underline;*/
 			    background-color: rgba(122, 122, 122, 0.12);
 			    border-top: 1px solid #974dbc;
 			}
@@ -93,23 +218,73 @@
 				var title = document.createElement('span');
 				var summary = document.createElement('span');
 				var description_wrapper = document.createElement('div');
+				var description_placeholder = document.createElement('div');
+				var intro = document.createElement('div');
 				var guy_wrapper = document.createElement('div');
 				var girl_wrapper = document.createElement('div');
 				var guy_imoticon_wrapper = document.createElement('div');
 				var guy_description_wrapper = document.createElement('div');
+				var guy_imoticon = document.createElement('div');
 				var girl_imoticon_wrapper = document.createElement('div');
 				var girl_description_wrapper = document.createElement('div');
+				var girl_imoticon = document.createElement('div');
+				var download_link_wrapper = document.createElement('div');
+				var ios_download_wrapper = document.createElement('div');
+				var ios_link = document.createElement('div');
+				var android_download_wrapper = document.createElement('div');
+				var android_link = document.createElement('div');
 				var footer = document.createElement('div');
 				upper_container.id = 'upper_container';
 				lower_container.id = 'lower_container';
 				title.id = 'title';
 				title.innerHTML = 'SAME GROUND';
 				summary.id = 'summary';
-				summary.innerHTML = '비슷한 배경을 가진 돌싱들의 프리미엄 만남공간';
-				description_wrapper.id = 'description_wrapper'
+				summary.innerHTML = '괜찮은 사람을 만나고 싶은 돌싱을 위한 프리미엄 만남공간';
+				description_wrapper.id = 'description_wrapper';
+				description_placeholder.id = 'description_placeholder';
+				intro.id = 'intro';
+				intro.innerHTML = '가입요건';
+				guy_wrapper.id = 'guy_wrapper';
+				guy_imoticon_wrapper.id = 'guy_imoticon_wrapper';
+				guy_description_wrapper.id = 'guy_description_wrapper';
+				guy_description_wrapper.innerHTML = "20 ~ 45세 돌싱 남성, \n명문대 졸업(서울대, 고려대, 연세대 등) 혹은\n대기업 근무(삼성, LG, 현대, SK 등) 혹은\n전문직(의사, 판사, 변호사, 약사, 등) 혹은\n사업가(연소득 1억 이상, 자산 10억 이상)";
+				guy_imoticon.id = 'guy_imoticon';
+				girl_wrapper.id = 'girl_wrapper';
+				girl_imoticon_wrapper.id = 'girl_imoticon_wrapper';
+				girl_description_wrapper.id = 'girl_description_wrapper';
+				girl_description_wrapper.innerHTML = "20 ~ 39세 모든 돌싱 여성";
+				girl_imoticon.id = 'girl_imoticon';
+				download_link_wrapper.id = 'download_link_wrapper'; 
+				ios_download_wrapper.id = 'ios_download_wrapper'; 
+				ios_link.id = 'ios_link';
+				ios_link.onclick = function(){
+
+				};
+				android_download_wrapper.id = 'android_download_wrapper'; 
+				android_link.id = 'android_link';
+				android_link.onclick = function(){
+
+				};
 				footer.id = 'footer';
+				footer.innerHTML = "문의 : sameground2018@gmail.com (E-mail), sameground2018 (카카오)";
+				guy_imoticon_wrapper.appendChild(guy_imoticon);
+				guy_wrapper.appendChild(guy_imoticon_wrapper);
+				guy_wrapper.appendChild(guy_description_wrapper);
+				girl_imoticon_wrapper.appendChild(girl_imoticon);
+				girl_wrapper.appendChild(girl_imoticon_wrapper);
+				girl_wrapper.appendChild(girl_description_wrapper);
+				ios_download_wrapper.appendChild(ios_link);
+				android_download_wrapper.appendChild(android_link);
+				download_link_wrapper.appendChild(ios_download_wrapper);
+				download_link_wrapper.appendChild(android_download_wrapper);
+				description_placeholder.appendChild(intro);
+				description_placeholder.appendChild(guy_wrapper);
+				description_placeholder.appendChild(girl_wrapper);
+				description_placeholder.appendChild(download_link_wrapper);
+				description_wrapper.appendChild(description_placeholder);
 				lower_container.appendChild(title);
 				lower_container.appendChild(summary);
+				lower_container.appendChild(description_wrapper);
 				document.body.appendChild(upper_container);
 				document.body.appendChild(lower_container);
 				document.body.appendChild(footer);
